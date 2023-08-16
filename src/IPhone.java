@@ -7,12 +7,12 @@ public class IPhone extends Phone implements Printable {
 
     }
 
-
-
-
+    public String getName() {
+        return name;
+    }
 
     @Override
     public void print() {
-        System.out.println("Model" + this.getModel() + " Akb" + this.getAKB());
+        System.out.println("Model " + this.getModel() + " Akb " + this.getAKB()+ getName());
     }
 }

@@ -12,5 +12,5 @@ public class BlackSharke extends Phone implements Printable{
     @Override
     public void print(){
 
-        System.out.println("Model" + this.getModel() + " Akb" + this.getAKB());}
+        System.out.println("Model " + this.getModel() + " Akb " + this.getAKB() + color);}
 }

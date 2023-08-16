@@ -6,12 +6,11 @@ public class Samsung extends Phone implements Printable{
         Criminal = criminal;
     }
 
-    public Samsung(String model, int AKB) {
-        super(model, AKB);
+    public String getCriminal() {
+        return Criminal;
     }
-
 
     @Override
     public void print() {
-        System.out.println("Model" + this.getModel() + " Akb" + this.getAKB() + "Criminal" + this.Criminal ); }
+        System.out.println("Model " + this.getModel() + "  Akb " + this.getAKB() + " Criminal " + this.getCriminal() ); }
 }
