@@ -1,18 +1,19 @@
-public abstract class Phone implements Printable  {
-    String Model ;
+public abstract class Phone implements Printable {
+    String Model;
     int AKB;
+
+    public Phone(String model, int AKB) {
+        this.Model = model;
+        this.AKB = AKB;
+    }
 
     public String getModel() {
         return Model;
     }
 
-    public Phone(String model, int AKB) {
-        Model = model;
-        this.AKB = AKB;
-    }
-
-    public static int getAKB() {
-        return getAKB();
-
+    public int getAKB() {
+        return AKB;
     }
 }
+
+

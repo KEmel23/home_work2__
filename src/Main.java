@@ -1,24 +1,25 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-public class Main {
+class Main{
     public static void main(String[] args) {
-    }
-
-    public static Phone createObject(String Model) {
-        switch (Model) {
-            case ("IPhone"):
-                IPhone iphone = new IPhone(2988, "S6+", "Phlagman");
-                return iphone;
-            case ("SAMSUNG"):
-                Samsung samsung = new Samsung("a4", 3000, "CopyModel");
-                return samsung;
-            case ("BlackShark"):
-                BlackSharke blackSharke = new BlackSharke(6000, "Shark");
-                return blackSharke;
-
-            System.out.println("MODEL: " + Model + "AKB: " + Phone.getAKB());
-
-
+        Phone[] phone = new Phone[3];
+        for (int i = 0; i < phone.length; i++) {
+            phone[0] = creatObjecct("IPhone");
+            phone[1] = creatObjecct("Samsung");
+            phone[2] = creatObjecct("BlackShark");
+            phone[i].print();
         }
+
+
     }
+    public static Phone creatObjecct(String className){
+        Phone phone = null;
+        if (className.equals("IPhone")){
+            phone = new IPhone(2848,"IPhone Xr","made in chine");
+        } else if (className.equals("Samsung")) {
+            phone = new Samsung("a4S",4000,"copy");
+        } else if (className.equals("BlackShark")) {
+            phone = new BlackSharke(6000,"Ryzen3","gray");
+        }
+        return phone;
+    }
+
 }

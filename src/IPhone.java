@@ -1,4 +1,4 @@
-public class IPhone extends Phone {
+public class IPhone extends Phone implements Printable {
     String name;
 
     public IPhone(int AKB, String Model, String name) {
@@ -7,13 +7,12 @@ public class IPhone extends Phone {
 
     }
 
-    @Override
-    public void printInfo() {
 
+
+
+
+    @Override
+    public void print() {
+        System.out.println("Model" + this.getModel() + " Akb" + this.getAKB());
     }
-
-    @Override
-    public void print(){
-
-            System.out.println("Model" + this.getModel() + " Akb" + this.getAKB());}
 }

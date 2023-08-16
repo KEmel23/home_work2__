@@ -1,4 +1,4 @@
-public class Samsung extends Phone{
+public class Samsung extends Phone implements Printable{
     String Criminal;
 
     public Samsung(String model, int AKB, String criminal) {
@@ -10,10 +10,6 @@ public class Samsung extends Phone{
         super(model, AKB);
     }
 
-    @Override
-    public void printInfo() {
-
-    }
 
     @Override
     public void print() {
